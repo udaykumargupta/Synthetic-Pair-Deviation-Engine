@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\SyntheticInstrumentCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\exchange\BinanceClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\exchange\OKXClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\exchange\BybitClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\utils\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\exchange\MarketDataStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\exchange\MarketDataAggregator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\RiskManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\TradeExecutor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\exchange\BinancePerpClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\monitoring\PerformanceMonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\LiquidityAnalyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\options\OptionPricer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\VolatilityArbitrage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\arbitrage\StatisticalArbitrageEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\monitoring\RiskDashboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\monitoring\VaREstimator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\SyntheticPairDeviationEngine\src\monitoring\StressTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="D:\SyntheticPairDeviationEngine\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CC71E62E-58E2-31B9-A324-03D5C57836F7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

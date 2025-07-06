@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.1/Modules/BasicConfigVersion-ExactVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-src/CMakeLists.txt
+D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-src/cmake/CMakeHelpers.cmake
+D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-src/websocketpp-config.cmake.in

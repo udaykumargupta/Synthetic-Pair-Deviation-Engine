@@ -1,0 +1,10 @@
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild -BD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild --check-stamp-file D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

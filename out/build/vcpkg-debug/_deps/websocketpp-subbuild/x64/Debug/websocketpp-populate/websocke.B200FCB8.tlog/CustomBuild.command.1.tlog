@@ -1,0 +1,150 @@
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/tmp/websocketpp-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/tmp/websocketpp-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-UPDATE.RULE
+setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/tmp/websocketpp-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-BUILD.RULE
+setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-INSTALL.RULE
+setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\878EE63EDB94180B099D0FC23ADB76B7\WEBSOCKETPP-POPULATE-TEST.RULE
+setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\20F2E2BFFC7D915E2CFACF9B3605BEB0\WEBSOCKETPP-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/Debug/websocketpp-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKEFILES\CE2F0026C50A114D2C2D54134A6F4B05\WEBSOCKETPP-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\_DEPS\WEBSOCKETPP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild -BD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild --check-stamp-file D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

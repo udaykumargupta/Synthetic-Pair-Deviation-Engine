@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/SyntheticPairDeviationEngine/build/_deps/websocketpp-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

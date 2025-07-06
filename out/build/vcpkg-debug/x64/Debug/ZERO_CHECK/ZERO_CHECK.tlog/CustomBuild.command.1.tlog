@@ -1,0 +1,10 @@
+^D:\SYNTHETICPAIRDEVIATIONENGINE\OUT\BUILD\VCPKG-DEBUG\CMAKEFILES\6751B46238DC70FFA1F68C963E575954\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/SyntheticPairDeviationEngine -BD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/SyntheticPairDeviationEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

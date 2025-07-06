@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-MSBuild"
+	BuildStamp="20250703-1108-Experimental"
+	Name="UDAY"
+	Generator="ctest-4.1.0-rc1"
+	CompilerName="C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe"
+	CompilerVersion="19.29.30154.0"
+	OSName="Windows"
+	Hostname="UDAY"
+	OSRelease=" Personal"
+	OSVersion=" (Build 26100)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="0"
+	ModelName="AMD Ryzen 7 4800H with Radeon Graphics"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="20138"
+	TotalPhysicalMemory="7598"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2901"
+	>
+	<Testing>
+		<StartDateTime>Jul 07 04:14 India Standard Time</StartDateTime>
+		<StartTestTime>1751841853</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jul 07 04:14 India Standard Time</EndDateTime>
+		<EndTestTime>1751841853</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

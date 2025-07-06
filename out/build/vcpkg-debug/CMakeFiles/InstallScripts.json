@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

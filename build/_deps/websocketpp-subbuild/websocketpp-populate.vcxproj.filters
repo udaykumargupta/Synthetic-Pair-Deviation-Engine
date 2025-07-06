@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\2873629e9467ea0cb2cc5fd7e8da4611\websocketpp-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\0821287196c2ef90015cbff26221376f\websocketpp-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\b83fcc97059b31f8c24abd25723e262e\websocketpp-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\SyntheticPairDeviationEngine\build\_deps\websocketpp-subbuild\CMakeFiles\websocketpp-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E9607048-B083-3601-93B3-B2881376DD13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

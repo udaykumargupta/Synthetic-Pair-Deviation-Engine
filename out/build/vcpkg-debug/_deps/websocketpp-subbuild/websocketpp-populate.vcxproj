@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B200FCB8-3335-3CA4-9877-43E4065D9E99}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>websocketpp-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-mkdir.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/tmp/websocketpp-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/tmp/websocketpp-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\websocketpp-populate-gitinfo.txt;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/tmp/websocketpp-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\tmp\websocketpp-populate-gitupdate.cmake;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\websocketpp-populate-update-info.txt;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\websocketpp-populate-patch-info.txt;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-configure.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\tmp\websocketpp-populate-cfgcmd.txt;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-build.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-install.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\878ee63edb94180b099d0fc23adb76b7\websocketpp-populate-test.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\20f2e2bffc7d915e2cfacf9b3605beb0\websocketpp-populate-complete.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'websocketpp-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/Debug/websocketpp-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/websocketpp-populate-prefix/src/websocketpp-populate-stamp/Debug/websocketpp-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-install;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-mkdir;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-download;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-update;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-patch;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-configure;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-build;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\src\websocketpp-populate-stamp\Debug\websocketpp-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\Debug\websocketpp-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\ce2f0026c50a114d2c2d54134a6f4b05\websocketpp-populate.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\Debug\websocketpp-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\websocketpp-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild -BD:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild --check-stamp-file D:/SyntheticPairDeviationEngine/out/build/vcpkg-debug/_deps/websocketpp-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\gitupdate.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\4.1.0-rc1\CMakeSystem.cmake;D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\websocketpp-populate-prefix\tmp\websocketpp-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\CMakeFiles\websocketpp-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\SyntheticPairDeviationEngine\out\build\vcpkg-debug\_deps\websocketpp-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{35A05D57-AA11-31B2-8762-43658F181009}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 15
+  },
+  "configurePresets": [
+    {
+      "name": "vcpkg-debug",
+      "hidden": false,
+      "generator": "Visual Studio 16 2019",
+      "description": "Use Visual Studio 2019 and vcpkg toolchain (Debug)",
+      "binaryDir": "${sourceDir}/out/build/vcpkg-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "vcpkg-debug",
+      "configurePreset": "vcpkg-debug"
+    }
+  ]
+}
