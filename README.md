@@ -120,6 +120,7 @@ Install via vcpkg or your system's package manager:
 ```bash
 git clone https://github.com/udaykumargupta/Synthetic-Pair-Deviation-Engine.git
 cd Synthetic-Pair-Deviation-Engine
+```
 ---
 
 ## Author
