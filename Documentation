@@ -1,0 +1,156 @@
+# Documentation
+
+## Technical Documentation
+### Architecture Overview and Design Decisions
+#### 🔧 Modular & Extensible Design
+- Exchange Clients: Each exchange (Binance, OKX, Bybit) has a dedicated client (BinanceClient, OKXClient, etc.) that establishes a real-time WebSocket connection to stream market data (spot/perpetual).
+- Market Data Aggregator: Centralized, thread-safe buffer that aggregates and synchronizes incoming order book data across all exchanges.
+- Synthetic Instrument Engine: Computes synthetic prices using real spot/funding/carry data:
+  -Spot + funding → synthetic perpetual
+  -Spot + carry → synthetic future
+-Arbitrage Engine: Detects mispricings, calculates spread thresholds, evaluates leg capital allocation, and triggers trade execution.
+-Risk Manager: Assesses slippage, correlation risk, funding volatility, and depth of book before trades.
+-Performance Monitor: Captures latency, throughput, trade logs, and VaR statistics for real-time observability.
+-Risk Engine:
+ Evaluates trades based on:
+  -Depth/liquidity
+  -Slippage
+  -Funding volatility
+  -VaR estimates
+  Performance Monitor:
+  Tracks:
+    -Latency per cycle
+    -Throughput
+    -System health
+    -P&L summaries
+
+✅ All components are loosely coupled and can be extended to support additional exchanges or trading strategies.
+
+### Component Interaction Flow
+
+                  ┌────────────────────────┐
+                  │   Exchange Clients     │
+                  │ Binance | Bybit | OKX  │
+                  └────────────┬───────────┘
+                               │
+                       Real-Time WebSocket Feeds
+                               │
+                  ┌────────────▼────────────┐
+                  │   MarketDataAggregator  │
+                  └────────────┬────────────┘
+                               │
+      ┌────────────────────────┼─────────────────────────┐
+      │                        │                         │
+┌─────▼─────┐         ┌────────▼────────┐        ┌───────▼────────┐
+│ Synthetic │         │ Arbitrage Engine│        │ Risk Manager   │
+│  Engine   │         │ + Optimizer     │        │ + VaR + Stress │
+└────▲──────┘         └─────────────────┘        └──────▲─────────┘
+     │                                                  │
+     └─────────────► TradeExecutor + PerformanceMonitor ◄──────────┐
+                        (Executes and Logs Trades)                 │
+                              │                                    │
+                         ┌────▼────┐                        ┌──────▼───────┐
+                         │ Output  │                        │ P&L + Metrics│
+                         │ Console │                        │   Reports    │
+                         └─────────┘                        └──────────────┘
+
+### Synthetic Pricing Models
+ **Synthetic Perpetual**
+   Synthetic Price = Spot Price + Funding Adjustment
+ **Synthetic Future**
+   Future Price = Spot Price × (1 + r × T / 365)
+   r: Interest rate / carry cost
+   T: Days until expiry
+
+### Threading and Concurrency Strategy
+-Each exchange client runs in a dedicated thread and pushes updates to the central aggregator.
+-The main decision loop runs every 2 seconds and:
+  -Computes synthetic instruments
+  -Checks for mispricings
+  -Executes arbitrage if risk conditions are met
+
+  **Code Snippet-**
+  std::thread(binanceClient.connect()).detach();
+  std::thread(bybitClient.connect()).detach();
+  std::thread(okxClient.connect()).detach();
+  // Main loop
+  while (true) {
+     aggregator.getLatestUpdates();
+     computeSyntheticPrices();
+     detectArbitrage();
+     std::this_thread::sleep_for(2s);
+  }
+
+  ### Build System and Setup
+  -CMake Build:The project uses CMake for cross-platform compilation and dependency management.
+  -Dependencies
+    -WebSocket++: For handling real-time WebSocket connections.
+    -Asio (standalone): For async networking.
+    -nlohmann/json: High-performance JSON parsing.
+    -spdlog (optional): For logging and tracing.
+    -Threads: For multithreading across exchanges.
+   All dependencies are included via CMakeLists.txt or vcpkg integration.
+
+ ### Extensibility
+-Add New Exchange
+  -Create a new class NewExchangeClient inheriting from ExchangeClient.
+  -Implement connect(), setOrderBookCallback(), and WebSocket message parsing logic.
+  -Register it inside main() and wire it to the aggregator.
+-Add New Strategy
+  -Create new strategy class or module (e.g., VolatilityArbitrage, CrossAssetArb)
+  -Invoke in main loop after data synchronization.
+  -Use synthetic calculators and risk manager utilities for leg optimization.
+
+### Project Folder Structure
+📁 SYNTHETICPAIRDEVIATIONENGINE
+├── 📁 src
+│   ├── 📁 arbitrage
+│   │   ├── 📁 options
+│   │   │   ├── OptionPricer.hpp/.cpp
+│   │   │   └── VolatilityArbitrageDetector.hpp
+│   │   ├── 📁 Risk
+│   │   │   ├── CorrelationAnalyzer.hpp
+│   │   │   ├── PositionManager.hpp
+│   │   │──── ArbitrageLegOptimizer.hpp
+│   │   │──── ArbitrageOpportunity.hpp
+│   │   │──── LiquidityAnalyzer.cpp/.hpp
+│   │   │──── MarketImpactEstimator.hpp
+│   │   │──── RiskManager.cpp/.hpp
+│   │   │──── StatisticalArbitrageEngine.cpp/.hpp
+│   │   │──── SyntheticInstrumentCalculator.cpp/.hpp
+│   │   │──── TradeExecutor.cpp/.hpp
+│   │   │──── VolatilityArbitrage.cpp/.hpp
+│   ├── 📁 exchange
+│   │   ├── BinanceClient.cpp/.hpp
+│   │   ├── BinancePerpClient.cpp/.hpp
+│   │   ├── BybitClient.cpp/.hpp
+│   │   ├── OKXClient.cpp/.hpp
+│   │   ├── ExchangeClient.hpp
+│   │   ├── MarketDataAggregator.cpp/.hpp
+│   │   ├── MarketDataStore.cpp/.hpp
+│   │   └── MarketDataTypes.hpp
+│   ├── 📁 monitoring
+│   │   ├── PerformanceMonitor.cpp/.hpp
+│   │   ├── RiskDashboard.cpp/.hpp
+│   │   ├── StressSimulator.hpp
+│   │   ├── StressTester.cpp/.hpp
+│   │   └── VaREstimator.cpp/.hpp
+│   ├── 📁 utils
+│   └── main.cpp
+│
+├── 📁 tests
+├── 📁 vcpkg
+├── CMakeLists.txt
+├── CMakePresets.json
+├── executed_trades.csv
+└── README.md
+
+### Summary
+This backend engine demonstrates:
+-Real-time synthetic derivative pricing
+-Cross-exchange arbitrage with capital-efficient leg building
+-Modular risk monitoring
+-Clean multithreaded design
+-Easy-to-extend strategy architecture
+
+
